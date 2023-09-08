@@ -1,0 +1,18 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+x_values = np.linspace(-10,10,10000)
+
+mean = 0
+std = 3
+norm = 1/np.sqrt(2*np.pi*(std**2))
+
+def gaussian(x,m,s):
+    return norm*np.exp(-(x-mean)**2/(2*s**2))
+
+plt.plot(x_values,gaussian(x_values,mean,std))
+plt.ylabel("Y")
+plt.xlabel("X")
+plt.title("Gaussian")
+plt.savefig("gaussian")
+plt.show()
