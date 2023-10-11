@@ -18,7 +18,7 @@ plt.legend()
 plt.xlabel("X values")
 plt.ylabel("Y values")
 plt.title("Gamma Function Integrand")
-#plt.show()
+plt.show()
 
 #defining function to integrate w/ change of first term
 def integrand(x,a):
